@@ -39,7 +39,7 @@ def hsv(i,k,fase):
 		h = round(math.fmod(x, 360)/360, 12)
 
 	s = 1
-	v = 1
+	v = 0.85
 
 	return (h,s,v)
 
@@ -73,9 +73,6 @@ def intToRgb(i,k,fase):
 	h,s,v = hsv(i,k,fase)
 	r,g,b = colorsys.hsv_to_rgb(h,s,v)
 
-	# r = int(round(r*255))
-	# g = int(round(g*255))
-	# b = int(round(b*255))
 
 	rgb = [r, g, b]
 
