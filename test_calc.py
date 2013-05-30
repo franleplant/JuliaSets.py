@@ -41,7 +41,7 @@ class KnownValuesConstant(unittest.TestCase):
 		self.assertEqual(True, notError)
 
 # Testing Failure
-class ItBadInput(unittest.TestCase):
+class BadInput(unittest.TestCase):
 	def test_Z_NotComplex(self):
 		""" calc.it() should fail with non complex Z """
 		self.assertRaises(calc.NotComplexError, calc.it, M([[1]]), 0 + 0j, 10)
