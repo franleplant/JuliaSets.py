@@ -47,6 +47,7 @@ def hsv(i,k,fase):
 
 def intToRgb(i,k,fase): 
 	""" comments """
+
 	if type(i) is float:
 		raise NotIntegerError, "i should be integer"
 
@@ -72,9 +73,9 @@ def intToRgb(i,k,fase):
 	h,s,v = hsv(i,k,fase)
 	r,g,b = colorsys.hsv_to_rgb(h,s,v)
 
-	r = int(round(r*255))
-	g = int(round(g*255))
-	b = int(round(b*255))
+	# r = int(round(r*255))
+	# g = int(round(g*255))
+	# b = int(round(b*255))
 
 	rgb = [r, g, b]
 

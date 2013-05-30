@@ -109,7 +109,7 @@ def it(Z,c,max_iteration):
 		#print z[...]
 
 		# hacer aca la trans color(i)
-		z[...] = i
+		z[...] = i*10
 
 	#print (I.real).astype(int)
 
